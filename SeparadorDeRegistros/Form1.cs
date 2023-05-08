@@ -34,7 +34,7 @@ namespace SeparadorDeRegistros
                 string[] guias = editTextGuiasValue.Split(',');
                 foreach(string guia in guias)
                 {
-                    if( String.IsNullOrEmpty(guia))
+                    if(! String.IsNullOrEmpty(guia))
                     {
                         listGuias.Add(guia.Trim());
                     }
